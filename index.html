@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <title>Payment Details</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>AIMS Daily Expenses</header>
+      <form
+        action="https://script.google.com/macros/s/AKfycbxgJKkdCFeGSQUGI9wdT_Ev0uud_99RnlNN2N20ggIomrYr_-vy6XN8TgPPthI5PAL6/exec"
+        name="submit-to-google-sheet"
+        autocomplete="off"
+        method="POST"
+      >
+        <div class="form first">
+          <div class="details personal">
+            <span class="title">Dispositioned By</span>
+            <div class="fields">
+              <div class="input-field">
+                <!-- <label>Dispositioned By</label> -->
+                <select name="Dispositioned By" id="Dispositioned" required>
+                  <option disabled selected>Select Employeer Name</option>
+
+                  <option value="Mohamed Refai">Mohamed Refai</option>
+                  <option value="Shaffi Hussain">Shaffi Hussain</option>
+                  <option value="Shaffi Hussain">Riyaz</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="details ID">
+            <span class="title">Expenses Details</span>
+            <div class="fields">
+              <div class="input-field">
+                <textarea
+                  id="input"
+                  rows="5"
+                  cols="50"
+                  placeholder="  Enter Expense Reason"
+                  name="Expense Reason"
+                ></textarea>
+              </div>
+
+              <div class="input-field">
+                <label>Expense Category</label>
+                <select name="Expense Category" id="expenseCategory" required>
+                  <option disabled selected>Select Expense Category</option>
+
+                  <option value="Referral Amount">Referral Amount</option>
+                  <option value="Staffs Accommodation">
+                    Staffs Accommodation
+                  </option>
+                  <option value="Staffs Necessary">Staffs Necessary</option>
+                  <option value="Staffs Necessary">Office Utilities</option>
+                </select>
+              </div>
+              <div class="input-field">
+                <label>Debited Transaction Mode</label>
+                <select
+                  name="Debited Transaction Mode"
+                  id="debited-transaction-mode"
+                  required
+                >
+                  <option disabled selected>Select Transaction Mode</option>
+                  <option value="In-Hand Cash">In-Hand Cash</option>
+                  <option value="Online Transaction - UPI">
+                    Online Transaction - UPI
+                  </option>
+                </select>
+              </div>
+              <div class="input-field">
+                <label>Amount Details</label>
+                <input
+                  type="text"
+                  placeholder="Enter Pending Amount"
+                  name="Amount Details"
+                  value="0"
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <button class="submit">
+            <span class="btnText">Submit</span>
+            <i class="uil uil-navigator"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+    <script src="./src/js/script.js"></script>
+  </body>
+</html>
