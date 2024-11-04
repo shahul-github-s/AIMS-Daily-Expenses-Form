@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
       } else {
         // Proceed with form submission
         const scriptURL =
-          "https://script.google.com/macros/s/AKfycbzLXQwYqz1opisO_H6BchG7PXcp1ZiCV9UGILoCaY7mjWNKPNoLlISAX2lxgGHGLzdZ/exec";
+          "https://script.google.com/macros/s/AKfycbzSYROT3RaPFQ_c-WiKYEiKTrRV0bBtD-dEyyAPCl-cjx9woFUHLN9NCX_mrI5vY9TS/exec";
 
         fetch(scriptURL, { method: "POST", body: new FormData(form) })
           .then((response) => {
